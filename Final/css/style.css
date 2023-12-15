@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+body {
+  font-family: "Raleway", sans-serif !important;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+  transition: background-Color 0.5s;
+}
+header.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+nav ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  gap: 1.25rem;
+}
+nav ul li {
+  font-size: 1.125rem; /* 18px */
+  position: relative;
+}
+nav ul li::after {
+  content: "";
+  width: 100%;
+  background-color: currentColor;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+nav ul li:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+#logo {
+  color: white;
+  font-size: 1.20rem; /* 24px */
+  line-height: 1.75rem;
+  font-weight: bolder;
+}
+
+#login {
+  display: flex;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 9999px;
+  border: solid 1px white;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem; /* 14px */
+  line-height: 1.5rem; /* 20px */
+}
+
+#reviews {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 10rem;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+#reviews div + div {
+  width: 40%;
+  border-left: solid 2px rgba(255, 255, 255, 0.5);
+  padding-left: 1rem;
+}
+#reviews div p span {
+  font-weight: bolder;
+}
+
+#heroPage {
+  height: 90vh;
+  background-image: url(../imgs/1679508580488.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#heroPage h2 {
+  font-weight: 500;
+}
+
+#oferecemos {
+  height: 100vh;
+  padding-top: 2rem;
+  background-color: #202020;
+  text-align: center;
+}
+#oferecemos h3 {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+#card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card img {
+  width: 18rem;
+}
+
+#emys1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/1679508580488.jpg);
+}
+
+#emys2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/1679508580488.jpg);
+}
+
+table,
+th,
+td {
+  font-size: 20px;
+  border: 2px solid #dbd9da;
+  color: #dbd9da;
+  padding: 17px;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+th {
+  font-size: 30px;
+}
+
+table {
+  margin: 10px;
+  border-collapse: collapse;
+}
+
+#k12 {
+  padding: 20px;
+}
+
+.container {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#fillips1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/1679508580488.jpg);
+}
+
+#fillips2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/1679508580488.jpg);
+}/*# sourceMappingURL=style.css.map */
